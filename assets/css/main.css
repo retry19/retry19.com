@@ -1,0 +1,37 @@
+body {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat, Tahoma, Verdana, Arial, sans-serif;
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
+    animation: gradient 15s ease infinite;
+    color: #fff;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 3.5rem;
+    display: inline;
+}
+
+a {
+    color: yellow;
+}
