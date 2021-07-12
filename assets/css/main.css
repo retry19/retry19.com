@@ -1,13 +1,16 @@
 body {
+    background: #23074d;
+    background: -webkit-linear-gradient(to right, #cc5333, #23074d);
+    background: linear-gradient(to right, #cc5333, #23074d);
+    font-family: Montserrat, Tahoma, Verdana, Arial, sans-serif;
+    animation: gradient 15s ease infinite;
+	background-size: 400% 400%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     overflow: hidden;
     display: flex;
-    flex-direction: column;
     height: 100vh;
-    align-items: center;
-    justify-content: center;
-    font-family: Montserrat, Tahoma, Verdana, Arial, sans-serif;
-    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
-    animation: gradient 15s ease infinite;
     color: #fff;
 }
 
@@ -27,11 +30,41 @@ body {
 
 h1 {
     text-align: center;
-    margin: 0;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     display: inline;
+    margin: 0;
+}
+
+@media screen and (min-width: 426px) {
+    h1 {
+        font-size: 3.5rem;
+    }
 }
 
 a {
-    color: yellow;
+    color: #355C7D;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.btn {
+    box-shadow: inset 0 0 1px 1px hsla(0,0%,100%,.9),
+        0 20px 27px 0 rgba(0,0,0,.16);
+    -webkit-backdrop-filter: saturate(200%) blur(30px);
+    backdrop-filter: saturate(200%) blur(30px);
+    background-color: hsla(0,0%,100%,.8);
+    transition: all .15s ease;
+    text-decoration: none;
+    position: relative;
+    padding: 1.3em 3em;
+    display: block;
+    margin: .5em;
+
+}
+
+.btn:hover {
+    transform: translate(6px, -6px);
+    background-color: #fff;
 }
